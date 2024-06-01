@@ -1,0 +1,48 @@
+{
+    "name": "switch_windows",
+    "displayName": "switch windows",
+    "description": "空间切换",
+    "version": "0.3.0",
+    "publisher": "haohailiang",
+    "private": true,
+    "license": "MIT",
+    "icon": "images/text.png",
+    "repository": "https://github.com/haohailiang/vscode-switch_windows",
+    "bugs": "https://github.com/haohailiang/vscode-switch_windows/issues",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "texteditor-util.toggleState",
+                "title": "[texteditor-util] toggleState"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint . --ext .ts,.tsx",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^12.12.0",
+        "@types/vscode": "^1.32.0",
+        "@typescript-eslint/eslint-plugin": "^4.16.0",
+        "@typescript-eslint/parser": "^4.16.0",
+        "eslint": "^7.21.0",
+        "typescript": "^4.5.5"
+    },
+    "dependencies": {
+        "change-case": "^4.1.2",
+        "fast-glob": "^3.2.11"
+    }
+}
