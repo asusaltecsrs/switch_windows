@@ -4,7 +4,6 @@
     "description": "空间切换",
     "version": "0.3.0",
     "publisher": "haohailiang",
-    "private": true,
     "license": "MIT",
     "icon": "images/text.png",
     "repository": "https://github.com/haohailiang/vscode-switch_windows",
